@@ -2,8 +2,8 @@
 <html xmlns:th ="https://www.thymeleaf.org">
 	<head>
     <meta charset="utf-8">
-    <title>Test</title>
-    <link th:href="@{/normalize.css}" rel="stylesheet" type="text/css">
+    <title>Form Sumbit</title>
+	<link th:href="@{/normalize.css}" rel="stylesheet" type="text/css">
     <link th:href="@{/createEvent.css}" rel="stylesheet" type="text/css">
     <style>
         .testid {
@@ -37,14 +37,16 @@
             	<label for = "endTime">End Time</label>
 				<input type ="time" th:field="*{endTime}">
         	</div>
-			</section>
-			
-			<section>
-			<br>
 			<div style = "float:left;margin-right:40px;">
             	<label for = "location">Location</label>
 				<input type ="text" th:field="*{location}">
        	 	</div>
+			</section>
+			
+			<br><br><br>
+			<section>
+			<br><br><br>
+			
 			
 			<div style = "float:left;margin-right:160px;">
             	<label for = "cost">Cost</label>
@@ -59,8 +61,8 @@
 			<br style="clear:both;">
    			</section>   
 			
-			<div style = "float:left;margin-right:30px;">
-            	<label for = "eventDescription">Event Description</label>
+			<div style = "text-align: center; margin-top: 70px;">
+            	<label for = "eventDescription"class = "center-event-input">Event Description</label>
 				<textarea rows="4" cols="50" th:field="*{eventDescription}">
 				</textarea>
         	</div>

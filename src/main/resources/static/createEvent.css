@@ -72,3 +72,20 @@ input[type=submit]{
 input[type=submit]:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+label {
+    display: block;
+    text-align: center;
+}
+button{
+    text-align: center;
+    margin-left: 48%;
+    margin-top: 20px;
+    height: 40px;
+    width: 60px;
+}
+.center-event-input{
+    text-align: center;
+    margin-right: 300px;
+    margin-bottom: 60px;
+}
