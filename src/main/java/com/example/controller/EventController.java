@@ -22,8 +22,11 @@ public class EventController {
     @PostMapping("/register")
     public String registerEvent(@ModelAttribute("userForm") User user) {
         userService.saveUser(user);
-        return "index"; // Redirect to the index page after saving
+        //model.addAttribute("Event Name", user.getEventName());
+
+        return "createdListing"; // Redirect to the index page after saving
     }
 }
 
-//redirect:/index.html
+
+

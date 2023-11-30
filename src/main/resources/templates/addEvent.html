@@ -5,6 +5,7 @@
     <title>Form Sumbit</title>
 	<link th:href="@{/normalize.css}" rel="stylesheet" type="text/css">
     <link th:href="@{/createEvent.css}" rel="stylesheet" type="text/css">
+	<link th:href="@{/design.css}" rel="stylesheet" type="text/css">
     <style>
         .testid {
             float: left;
@@ -13,7 +14,18 @@
     </style>
 </head>
 	
-	<body>
+	<body> 
+
+		<div class ='topnav'>   
+			<a th:href="@{./aboutUs.html}">About Us</a>
+			<a th:href="@{./profile.html}">My Profile</a>
+			<a th:href="@{./login.html}">Log in/Sign up</a>
+			<a th:href = "@{./index.html}">Home</a>
+			<span class ="testid">
+				<a href="https://www.csus.edu/student-life/career-center/">
+					<img th:src="@{/whitelogo-stacked.png}" class="Sacramento State Logo" width="200px" height="29px" />
+				</span></a>
+		</div>
 		
 		<h1>Create an Event</h1>
 		<form th:action="@{/events/register}" th:method="post" th:object="${userForm}">

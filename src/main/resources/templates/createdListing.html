@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>SignUpSuc</title>
+    <link th:href="@{/normalize.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/design.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="topnav" th:action="@{/}" th:method="get">
+        <a th:href="@{./aboutUs.html}">About Us</a>
+        <a th:href="@{./profile.html}">My Profile</a>
+        <a th:href="@{./login.html}">Log in/Sign up</a>
+        <a th:href="@{./index.html}">Home</a>
+        <span class="testid">
+            <a href="https://www.csus.edu/student-life/career-center/">
+                <img th:src="@{/whitelogo-stacked.png}" class="Sacramento State Logo" width="200px" height="29px"/>
+            </a>
+        </span>
+    </div>
+
+    <h1 style="top: 80px;">Your Listing Has Been Created!</h1>
+
+    <h1 th:text = "${event_name}"></h1>
+
+    <h1 style="top: 140px;"><a th:href="@{./index.html}">Home</a>Click here to return home</a></h1>
+</body>
+</html>
